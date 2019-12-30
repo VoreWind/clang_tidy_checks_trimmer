@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="checks_file_button">
+          <property name="text">
+           <string>Файл с проверками</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="report_file_button">
+          <property name="text">
+           <string>Файл с отчетом</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="trim_button">
+        <property name="text">
+         <string>Проверить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPlainTextEdit" name="result_text">
+      <property name="plainText">
+       <string>/home/jenkins/work/mca_with_build/mca/deploy_targets/common_embedded_libraries/test_utils/mocks/uart_library_mocks/source/usart.h:1:9: error: header guard does not follow preferred style [llvm-header-guard,-warnings-as-errors]
+#ifndef USART_H
+        ^~~~~~~
+        _HOME_JENKINS_WORK_MCA_WITH_BUILD_MCA_DEPLOY_TARGETS_COMMON_EMBEDDED_LIBRARIES_TEST_UTILS_MOCKS_UART_LIBRARY_MOCKS_SOURCE_USART_H
+/home/jenkins/work/mca_with_build/mca/deploy_targets/cross_platform_interface/source/cross_platform_main.h:1:9: error: header guard does not follow preferred style [llvm-header-guard,-warnings-as-errors]
+#ifndef CROSS_PLATFORM_MAIN_H
+        ^~~~~~~~~~~~~~~~~~~~~
+        _HOME_JENKINS_WORK_MCA_WITH_BUILD_MCA_DEPLOY_TARGETS_CROSS_PLATFORM_INTERFACE_SOURCE_CROSS_PLATFORM_MAIN_H
+/home/jenkins/work/mca_with_build/mca/deploy_targets/default_cross_platform_interfaces/doctest_runner/sources/cross_platform_doctest.h:1:9: error: header guard does not follow preferred style [llvm-header-guard,-warnings]
+#ifndef CROSS_PLATFORM_DOCTEST_H
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        _HOME_JENKINS_WORK_MCA_WITH_BUILD_MCA_DEPLOY_TARGETS_DEFAULT_CROSS_PLATFORM_INTERFACES_DOCTEST_RUNNER_SOURCES_CROSS_PLATFORM_DOCTEST_H
+/home/jenkins/work/mca_with_build/mca/ca_infrastructure/subsystems/low_level_subsystems/memory/allocators/allocator_interface/sources/allocators.h:1:9: error: header guard does not follow preferred style [llvm-header-guard,-warnings-as-errors]
+#ifndef ALLOCATORS_H</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
